@@ -8,23 +8,658 @@
   list-style: none;
 }
 
-/* header{
-    background-image: url("/Layer\ 5.png");
-    background-position:bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-} */
-
-header section{
-    background-image: url(/Layer\ 5.png);
-    background-repeat: no-repeat;
-    background-position: bottom center;
-    width: 100%;
-}
 .vertical {
     border-left: 1px solid rgb(66, 66, 66);
+}
+
+.action-btn{
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    margin: 5px 10px 0 0;
+}
+
+.action-btn2{
+    border-radius: 50px 50px 50px 50px;
+    background: none;
+    border: none;
+    outline: none;
+    color: rgb(10, 13, 221);
+    padding: 10px 20px 10px 20px;
+    margin: 5px 10px 0 0;
+}
+
+.action-btn2:hover{
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    margin: 5px 10px 0 0;
+}
+
+
+.header-section h1{
+    font-size: 55px;
+}
+
+.hero-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Editor Area  */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 300px;
+    height: 34px;
+}
+
+.slider {
+    color: rgb(248, 246, 246);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(209, 204, 204);
+}
+
+.editor{
+    color: black;
+    font-weight: bold;
+}
+
+.slider:before {
+    position: absolute;
+    content: "\2713";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: rgb(212, 110, 14);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* Trusted Company */
+
+.trusted-company{
+    text-align: center;
+}
+
+.brand-img{
+    margin: 50px;
+}
+
+.brand-img img{
+    margin: 0px 30px 0 30px;
+}
+
+/* App Features */
+
+.app-feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 0px;
+}
+
+.app-image{
+    margin: 10px 30px 0px 0px;
+    padding: 0px 30px;
+}
+
+.app-section{
+    padding: 0px 30px;
+}
+
+.app-description{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-description-img{
+    margin-right: 30px;
+}
+
+/* JackPot */
+.jackpot{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.jackpot-header{
+    border-right: 1px solid rgba(128, 128, 128, 0.452);
+    padding: 40px;
+    width: 78%;
+}
+
+.jackpot-describe{
+    margin: 0 30px;
+    padding: 30px;
+    width: 75%;
+}
+
+/* Jackpot App */
+
+.jackpot-app{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    margin-top: 30px;
+}
+
+.jackpot-app-description{
+    margin: 20px 30px;
+    padding: 30px 50px;
+}
+
+.feature-describe{
+    margin-top: 20px;
+}
+
+/* code integration */
+
+.code-integration{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 90px;
+}
+
+.code-describe{
+    width: 75%;
+    padding: 20px 30px;
+}
+
+/* choose our app */
+
+.choose-our-app{
+    text-align: center;
+}
+
+.choose-app-header{
+    width: 68%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px 120px;
+}
+
+.choose-app-header h2{
+    font-weight: bold;
+    color: rgb(228, 27, 27);
+    padding: 20px 100px;
+}
+
+
+.choose-app{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 80px;
+}
+
+.choose-app-details{
+    padding: 10px 50px;
+}
+
+.app-box{
+    margin-top: 20px;
+}
+
+/* Ultimate Feature */
+
+.ultimate-feature-header{
+    width: 65%;
+    padding: 10px 30px;
+}
+
+.ultimate-feature{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ultimate-feature-describe{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.ultimate-feature-image img{
+    width: 600px;
+}
+
+.ultimate-feature-box{
+    padding: 10px 30px;
+}
+
+.ultimate-box{
+        margin-top: 30px;
+    }
+
+.btn-box{
+    padding: 10px 30px;
+}
+
+/* Pricing Table */
+
+.pricing-area-header{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    padding: 0px 30px;
+}
+
+.custom-separator {
+    width: 50px;
+    height: 6px;
+    border-radius: 16px;
+}
+
+.pricing-package{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    width: 230px;
+    border: 1px solid rgb(194, 193, 193);
+    border-radius: 30px;
+    height: 50px;
+}
+
+.action{
+    font-weight: bold;
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+}
+
+.action2{
+    background-color: #fff;
+}
+.action2:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+.pricing-package button{
+    font-weight: bold;
+    border-radius: 50px 50px 50px 50px;
+    border: none;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+}
+/* Accordion */
+.faq{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+.accordion-item {
+    margin: 1rem 0;
+}
+.accordion-item-header {
+    background-color: rgb(219, 218, 218);
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.accordion-item-header::after {
+    content: "\002B";
+    font-weight: 300;
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+}
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.accordion-item-body-content {
+    padding: 1rem;
+    line-height: 1.5rem;
+    background-color: rgb(219, 218, 218);
+}
+
+/* Social Area */
+.social-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-area{
+    display: flex;
+    align-items: center;
+    
+}
+
+.social-area-describe{
+    margin-left: 150px;
+    padding: 30px 130px;
+}
+
+.download-box{
+    margin-right: 20px;
+}
+
+/* Usefull Area */
+footer{
+    height: 400px;
+    text-align: center;
+    background-color: #09142e;
+}
+
+.usefull-area{
+    margin: 40px 0px;
+    padding-top: 80px;
+}
+
+
+.usefull-link{
+    margin: 15px 20px;
+}
+
+.usefull-link a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.usefull-area p, h3{
+    color: #fff;
+}
+
+.fab{
+    font-size: 30px;
+    color: #fff;
+    margin: 25px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    .header-area{
+        margin-top: 50px;
+    }
+    .header-area h4{
+        font-size: 15px;
+    }
+
+    .header-section h1{
+    font-size: 25px;
+    }
+    .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    }
+
+    .hero-section .hero-img img{
+        width: 300px;
+    }
+
+    /* Trusted Company */
+
+    .brand-img{
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .brand-img img{
+        margin-top: 30px;
+    }
+
+    /* App Features */
+
+    .app-feature{
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .app-image img{
+        width: 400px;
+    }
+
+
+    .app-description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* JackPot Area */
+    .jackpot{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .jackpot-header{
+        border-right: none;
+    }
+
+    /* Jackpot App */
+
+    .jackpot-app{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .jackpot-app-description{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 20px 30px;
+        padding: 30px 50px;
+    }
+
+    .feature-describe{
+        margin-top: 20px;
+    }
+
+    .jackpot-app-img{
+        margin-right: 15px;
+    }
+
+    /* code integration */
+
+    .code-integration{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .code-image img{
+        width: 100%;
+    }
+
+    /* choose our app */
+
+    .choose-our-app{
+        text-align: center;
+    }
+
+    .choose-app-header{
+        width: 100%;
+        padding: 0px;
+        margin-bottom: 25px;
+    }
+
+    .choose-app-header h2{
+        font-weight: bold;
+        color: rgb(228, 27, 27);
+    }
+
+
+    .choose-app{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 80px;
+    }
+
+    .choose-app-details{
+        padding: 10px 50px;
+    }
+
+    .app-box{
+        margin-top: 20px;
+    }
+
+    /* Ultimate Feature */
+
+    .ultimate-feature-header{
+        width: 100%;
+        padding: 10px 30px;
+    }
+
+    .ultimate-feature{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .ultimate{
+        order: 2;
+    }
+
+    .ultimate-feature-describe{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .ultimate-feature-image img{
+        width: 300px;
+        order: 1;
+    }
+
+    .ultimate-feature-box{
+        padding: 10px 30px;
+    }
+    .ultimate-box{
+        margin-top: 30px;
+    }
+
+    .btn-box{
+        padding: 10px 30px;
+    }
+
+    /* Social Area */
+    .social-area{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    .download-area{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .social-area-describe{
+        margin: auto;
+        width: 100%;
+        padding: 0;
+    }
+
+    .download-box{
+        margin-top: 20px;
+    }
+
+    .usefull-area{
+    margin: auto;
+    padding-top: 80px;
+    }
+
+    /* FAQ */
+    .faq{
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    margin-top: 50px;
+}
+
+
 }
 
